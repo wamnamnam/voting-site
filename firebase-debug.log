@@ -1,0 +1,330 @@
+[debug] [2025-04-03T16:35:45.364Z] ----------------------------------------------------------------------
+[debug] [2025-04-03T16:35:45.366Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2025-04-03T16:35:45.366Z] CLI Version:   14.1.0
+[debug] [2025-04-03T16:35:45.366Z] Platform:      darwin
+[debug] [2025-04-03T16:35:45.366Z] Node Version:  v22.14.0
+[debug] [2025-04-03T16:35:45.366Z] Time:          Thu Apr 03 2025 17:35:45 GMT+0100 (British Summer Time)
+[debug] [2025-04-03T16:35:45.366Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-03T16:35:45.468Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-03T16:35:45.469Z] > authorizing via signed-in user (wamnam.official@gmail.com)
+[debug] [2025-04-03T16:35:45.469Z] [iam] checking project project-wamnam for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-03T16:35:45.469Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:35:45.469Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:35:45.470Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions [none]
+[debug] [2025-04-03T16:35:45.470Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions x-goog-quota-user=projects/project-wamnam
+[debug] [2025-04-03T16:35:45.470Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-03T16:35:46.275Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions 200
+[debug] [2025-04-03T16:35:46.275Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-03T16:35:46.275Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:35:46.275Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:35:46.275Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam [none]
+[debug] [2025-04-03T16:35:46.684Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam 200
+[debug] [2025-04-03T16:35:46.685Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam {"projectId":"project-wamnam","projectNumber":"1041456749002","displayName":"project wamnam","name":"projects/project-wamnam","resources":{"hostingSite":"project-wamnam"},"state":"ACTIVE","etag":"1_f1c34e4c-4f8d-4107-a1d4-d0989ac4ab9b"}
+[info] 
+[info] === Deploying to 'project-wamnam'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-04-03T16:35:46.688Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:35:46.688Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:35:46.689Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions [none]
+[debug] [2025-04-03T16:35:46.689Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-04-03T16:35:47.754Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions 200
+[debug] [2025-04-03T16:41:57.787Z] ----------------------------------------------------------------------
+[debug] [2025-04-03T16:41:57.788Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2025-04-03T16:41:57.788Z] CLI Version:   14.1.0
+[debug] [2025-04-03T16:41:57.788Z] Platform:      darwin
+[debug] [2025-04-03T16:41:57.788Z] Node Version:  v22.14.0
+[debug] [2025-04-03T16:41:57.789Z] Time:          Thu Apr 03 2025 17:41:57 GMT+0100 (British Summer Time)
+[debug] [2025-04-03T16:41:57.789Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-03T16:41:57.879Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-03T16:41:57.879Z] > authorizing via signed-in user (wamnam.official@gmail.com)
+[debug] [2025-04-03T16:41:57.879Z] [iam] checking project project-wamnam for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-03T16:41:57.880Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:41:57.880Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:41:57.880Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions [none]
+[debug] [2025-04-03T16:41:57.880Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions x-goog-quota-user=projects/project-wamnam
+[debug] [2025-04-03T16:41:57.880Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-03T16:41:58.569Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions 200
+[debug] [2025-04-03T16:41:58.569Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-03T16:41:58.570Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:41:58.570Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:41:58.570Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam [none]
+[debug] [2025-04-03T16:41:58.914Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam 200
+[debug] [2025-04-03T16:41:58.914Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam {"projectId":"project-wamnam","projectNumber":"1041456749002","displayName":"project wamnam","name":"projects/project-wamnam","resources":{"hostingSite":"project-wamnam"},"state":"ACTIVE","etag":"1_f1c34e4c-4f8d-4107-a1d4-d0989ac4ab9b"}
+[info] 
+[info] === Deploying to 'project-wamnam'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-04-03T16:41:58.920Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:41:58.920Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:41:58.920Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions [none]
+[debug] [2025-04-03T16:41:58.920Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-04-03T16:41:59.963Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions 200
+[debug] [2025-04-03T16:44:33.727Z] ----------------------------------------------------------------------
+[debug] [2025-04-03T16:44:33.729Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting --debug
+[debug] [2025-04-03T16:44:33.729Z] CLI Version:   14.1.0
+[debug] [2025-04-03T16:44:33.729Z] Platform:      darwin
+[debug] [2025-04-03T16:44:33.729Z] Node Version:  v22.14.0
+[debug] [2025-04-03T16:44:33.729Z] Time:          Thu Apr 03 2025 17:44:33 GMT+0100 (British Summer Time)
+[debug] [2025-04-03T16:44:33.729Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-03T16:44:33.816Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-03T16:44:33.817Z] > authorizing via signed-in user (wamnam.official@gmail.com)
+[debug] [2025-04-03T16:44:33.817Z] [iam] checking project project-wamnam for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-03T16:44:33.817Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:44:33.818Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:44:33.818Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions [none]
+[debug] [2025-04-03T16:44:33.818Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions x-goog-quota-user=projects/project-wamnam
+[debug] [2025-04-03T16:44:33.818Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-03T16:44:34.500Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions 200
+[debug] [2025-04-03T16:44:34.500Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-03T16:44:34.500Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:44:34.500Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:44:34.501Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam [none]
+[debug] [2025-04-03T16:44:34.792Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam 200
+[debug] [2025-04-03T16:44:34.792Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam {"projectId":"project-wamnam","projectNumber":"1041456749002","displayName":"project wamnam","name":"projects/project-wamnam","resources":{"hostingSite":"project-wamnam"},"state":"ACTIVE","etag":"1_f1c34e4c-4f8d-4107-a1d4-d0989ac4ab9b"}
+[info] 
+[info] === Deploying to 'project-wamnam'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-04-03T16:44:34.795Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:44:34.796Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:44:34.796Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions [none]
+[debug] [2025-04-03T16:44:34.796Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-04-03T16:44:35.759Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions 200
+[debug] [2025-04-03T16:49:02.759Z] ----------------------------------------------------------------------
+[debug] [2025-04-03T16:49:02.760Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2025-04-03T16:49:02.760Z] CLI Version:   14.1.0
+[debug] [2025-04-03T16:49:02.760Z] Platform:      darwin
+[debug] [2025-04-03T16:49:02.760Z] Node Version:  v22.14.0
+[debug] [2025-04-03T16:49:02.761Z] Time:          Thu Apr 03 2025 17:49:02 GMT+0100 (British Summer Time)
+[debug] [2025-04-03T16:49:02.761Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-03T16:49:02.856Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-03T16:49:02.856Z] > authorizing via signed-in user (wamnam.official@gmail.com)
+[debug] [2025-04-03T16:49:02.856Z] [iam] checking project project-wamnam for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-03T16:49:02.857Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:49:02.857Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:49:02.857Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions [none]
+[debug] [2025-04-03T16:49:02.857Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions x-goog-quota-user=projects/project-wamnam
+[debug] [2025-04-03T16:49:02.857Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-03T16:49:03.563Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions 200
+[debug] [2025-04-03T16:49:03.564Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-03T16:49:03.564Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:49:03.564Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:49:03.564Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam [none]
+[debug] [2025-04-03T16:49:03.891Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam 200
+[debug] [2025-04-03T16:49:03.891Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam {"projectId":"project-wamnam","projectNumber":"1041456749002","displayName":"project wamnam","name":"projects/project-wamnam","resources":{"hostingSite":"project-wamnam"},"state":"ACTIVE","etag":"1_f1c34e4c-4f8d-4107-a1d4-d0989ac4ab9b"}
+[info] 
+[info] === Deploying to 'project-wamnam'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-04-03T16:49:03.892Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:49:03.892Z] Checked if tokens are valid: true, expires at: 1743700184483
+[debug] [2025-04-03T16:49:03.892Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions [none]
+[debug] [2025-04-03T16:49:03.892Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-04-03T16:49:05.136Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions 200
+[debug] [2025-04-03T16:55:08.300Z] ----------------------------------------------------------------------
+[debug] [2025-04-03T16:55:08.302Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2025-04-03T16:55:08.302Z] CLI Version:   14.1.0
+[debug] [2025-04-03T16:55:08.302Z] Platform:      darwin
+[debug] [2025-04-03T16:55:08.302Z] Node Version:  v22.14.0
+[debug] [2025-04-03T16:55:08.302Z] Time:          Thu Apr 03 2025 17:55:08 GMT+0100 (British Summer Time)
+[debug] [2025-04-03T16:55:08.302Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-03T16:55:08.393Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-03T16:55:08.393Z] > authorizing via signed-in user (wamnam.official@gmail.com)
+[debug] [2025-04-03T16:55:08.394Z] [iam] checking project project-wamnam for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-03T16:55:08.394Z] Checked if tokens are valid: false, expires at: 1743700184483
+[debug] [2025-04-03T16:55:08.394Z] Checked if tokens are valid: false, expires at: 1743700184483
+[debug] [2025-04-03T16:55:08.394Z] > refreshing access token with scopes: []
+[debug] [2025-04-03T16:55:08.395Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-04-03T16:55:08.395Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-03T16:55:08.578Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-04-03T16:55:08.579Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-03T16:55:08.587Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions [none]
+[debug] [2025-04-03T16:55:08.587Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions x-goog-quota-user=projects/project-wamnam
+[debug] [2025-04-03T16:55:08.587Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-03T16:55:08.810Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions 200
+[debug] [2025-04-03T16:55:08.810Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-03T16:55:08.811Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T16:55:08.811Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T16:55:08.812Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam [none]
+[debug] [2025-04-03T16:55:09.118Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam 200
+[debug] [2025-04-03T16:55:09.118Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam {"projectId":"project-wamnam","projectNumber":"1041456749002","displayName":"project wamnam","name":"projects/project-wamnam","resources":{"hostingSite":"project-wamnam"},"state":"ACTIVE","etag":"1_f1c34e4c-4f8d-4107-a1d4-d0989ac4ab9b"}
+[info] 
+[info] === Deploying to 'project-wamnam'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-04-03T16:55:09.122Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T16:55:09.122Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T16:55:09.122Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions [none]
+[debug] [2025-04-03T16:55:09.122Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-04-03T16:55:10.845Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions 200
+[debug] [2025-04-03T17:03:18.798Z] ----------------------------------------------------------------------
+[debug] [2025-04-03T17:03:18.802Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2025-04-03T17:03:18.802Z] CLI Version:   14.1.0
+[debug] [2025-04-03T17:03:18.802Z] Platform:      darwin
+[debug] [2025-04-03T17:03:18.802Z] Node Version:  v22.14.0
+[debug] [2025-04-03T17:03:18.802Z] Time:          Thu Apr 03 2025 18:03:18 GMT+0100 (British Summer Time)
+[debug] [2025-04-03T17:03:18.802Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-03T17:03:18.890Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-03T17:03:18.890Z] > authorizing via signed-in user (wamnam.official@gmail.com)
+[debug] [2025-04-03T17:03:18.890Z] [iam] checking project project-wamnam for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-03T17:03:18.891Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:03:18.891Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:03:18.891Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions [none]
+[debug] [2025-04-03T17:03:18.891Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions x-goog-quota-user=projects/project-wamnam
+[debug] [2025-04-03T17:03:18.891Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-03T17:03:19.197Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions 200
+[debug] [2025-04-03T17:03:19.197Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-03T17:03:19.198Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:03:19.198Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:03:19.198Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam [none]
+[debug] [2025-04-03T17:03:19.643Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam 200
+[debug] [2025-04-03T17:03:19.644Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam {"projectId":"project-wamnam","projectNumber":"1041456749002","displayName":"project wamnam","name":"projects/project-wamnam","resources":{"hostingSite":"project-wamnam"},"state":"ACTIVE","etag":"1_f1c34e4c-4f8d-4107-a1d4-d0989ac4ab9b"}
+[info] 
+[info] === Deploying to 'project-wamnam'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-04-03T17:03:19.647Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:03:19.647Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:03:19.648Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions [none]
+[debug] [2025-04-03T17:03:19.648Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-04-03T17:03:21.423Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions 200
+[debug] [2025-04-03T17:20:43.479Z] ----------------------------------------------------------------------
+[debug] [2025-04-03T17:20:43.480Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2025-04-03T17:20:43.480Z] CLI Version:   14.1.0
+[debug] [2025-04-03T17:20:43.480Z] Platform:      darwin
+[debug] [2025-04-03T17:20:43.480Z] Node Version:  v22.14.0
+[debug] [2025-04-03T17:20:43.480Z] Time:          Thu Apr 03 2025 18:20:43 GMT+0100 (British Summer Time)
+[debug] [2025-04-03T17:20:43.480Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-03T17:20:43.569Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-03T17:20:43.569Z] > authorizing via signed-in user (wamnam.official@gmail.com)
+[debug] [2025-04-03T17:20:43.569Z] [iam] checking project project-wamnam for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-03T17:20:43.570Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:20:43.570Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:20:43.570Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions [none]
+[debug] [2025-04-03T17:20:43.570Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions x-goog-quota-user=projects/project-wamnam
+[debug] [2025-04-03T17:20:43.570Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-03T17:20:44.287Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions 200
+[debug] [2025-04-03T17:20:44.287Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-03T17:20:44.287Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:20:44.287Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:20:44.287Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam [none]
+[debug] [2025-04-03T17:20:44.619Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam 200
+[debug] [2025-04-03T17:20:44.619Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam {"projectId":"project-wamnam","projectNumber":"1041456749002","displayName":"project wamnam","name":"projects/project-wamnam","resources":{"hostingSite":"project-wamnam"},"state":"ACTIVE","etag":"1_f1c34e4c-4f8d-4107-a1d4-d0989ac4ab9b"}
+[info] 
+[info] === Deploying to 'project-wamnam'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-04-03T17:20:44.623Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:20:44.623Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:20:44.623Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions [none]
+[debug] [2025-04-03T17:20:44.623Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-04-03T17:20:45.710Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions 200
+[debug] [2025-04-03T17:26:07.889Z] ----------------------------------------------------------------------
+[debug] [2025-04-03T17:26:07.890Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2025-04-03T17:26:07.891Z] CLI Version:   14.1.0
+[debug] [2025-04-03T17:26:07.891Z] Platform:      darwin
+[debug] [2025-04-03T17:26:07.891Z] Node Version:  v22.14.0
+[debug] [2025-04-03T17:26:07.891Z] Time:          Thu Apr 03 2025 18:26:07 GMT+0100 (British Summer Time)
+[debug] [2025-04-03T17:26:07.891Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-03T17:26:07.978Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-03T17:26:07.978Z] > authorizing via signed-in user (wamnam.official@gmail.com)
+[debug] [2025-04-03T17:26:07.978Z] [iam] checking project project-wamnam for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-03T17:26:07.979Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:26:07.979Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:26:07.979Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions [none]
+[debug] [2025-04-03T17:26:07.979Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions x-goog-quota-user=projects/project-wamnam
+[debug] [2025-04-03T17:26:07.979Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-03T17:26:08.733Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions 200
+[debug] [2025-04-03T17:26:08.733Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-03T17:26:08.733Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:26:08.733Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:26:08.733Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam [none]
+[debug] [2025-04-03T17:26:09.066Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam 200
+[debug] [2025-04-03T17:26:09.066Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam {"projectId":"project-wamnam","projectNumber":"1041456749002","displayName":"project wamnam","name":"projects/project-wamnam","resources":{"hostingSite":"project-wamnam"},"state":"ACTIVE","etag":"1_f1c34e4c-4f8d-4107-a1d4-d0989ac4ab9b"}
+[info] 
+[info] === Deploying to 'project-wamnam'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-04-03T17:26:09.070Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:26:09.070Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:26:09.070Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions [none]
+[debug] [2025-04-03T17:26:09.070Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-04-03T17:26:10.163Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions 200
+[debug] [2025-04-03T17:33:28.340Z] ----------------------------------------------------------------------
+[debug] [2025-04-03T17:33:28.342Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2025-04-03T17:33:28.342Z] CLI Version:   14.1.0
+[debug] [2025-04-03T17:33:28.342Z] Platform:      darwin
+[debug] [2025-04-03T17:33:28.342Z] Node Version:  v22.14.0
+[debug] [2025-04-03T17:33:28.342Z] Time:          Thu Apr 03 2025 18:33:28 GMT+0100 (British Summer Time)
+[debug] [2025-04-03T17:33:28.342Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-03T17:33:28.429Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-03T17:33:28.429Z] > authorizing via signed-in user (wamnam.official@gmail.com)
+[debug] [2025-04-03T17:33:28.429Z] [iam] checking project project-wamnam for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-03T17:33:28.430Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:33:28.430Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:33:28.430Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions [none]
+[debug] [2025-04-03T17:33:28.430Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions x-goog-quota-user=projects/project-wamnam
+[debug] [2025-04-03T17:33:28.430Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-03T17:33:29.159Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions 200
+[debug] [2025-04-03T17:33:29.159Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-03T17:33:29.159Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:33:29.159Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:33:29.159Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam [none]
+[debug] [2025-04-03T17:33:29.482Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam 200
+[debug] [2025-04-03T17:33:29.483Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam {"projectId":"project-wamnam","projectNumber":"1041456749002","displayName":"project wamnam","name":"projects/project-wamnam","resources":{"hostingSite":"project-wamnam"},"state":"ACTIVE","etag":"1_f1c34e4c-4f8d-4107-a1d4-d0989ac4ab9b"}
+[info] 
+[info] === Deploying to 'project-wamnam'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-04-03T17:33:29.486Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:33:29.486Z] Checked if tokens are valid: true, expires at: 1743702907579
+[debug] [2025-04-03T17:33:29.487Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions [none]
+[debug] [2025-04-03T17:33:29.487Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-04-03T17:33:30.646Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions 200
+[debug] [2025-04-03T17:41:17.655Z] ----------------------------------------------------------------------
+[debug] [2025-04-03T17:41:17.656Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2025-04-03T17:41:17.656Z] CLI Version:   14.1.0
+[debug] [2025-04-03T17:41:17.656Z] Platform:      darwin
+[debug] [2025-04-03T17:41:17.656Z] Node Version:  v22.14.0
+[debug] [2025-04-03T17:41:17.656Z] Time:          Thu Apr 03 2025 18:41:17 GMT+0100 (British Summer Time)
+[debug] [2025-04-03T17:41:17.657Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-03T17:41:17.743Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-03T17:41:17.744Z] > authorizing via signed-in user (wamnam.official@gmail.com)
+[debug] [2025-04-03T17:41:17.744Z] [iam] checking project project-wamnam for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-03T17:41:17.744Z] Checked if tokens are valid: false, expires at: 1743702907579
+[debug] [2025-04-03T17:41:17.744Z] Checked if tokens are valid: false, expires at: 1743702907579
+[debug] [2025-04-03T17:41:17.744Z] > refreshing access token with scopes: []
+[debug] [2025-04-03T17:41:17.745Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-04-03T17:41:17.745Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-03T17:41:17.933Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-04-03T17:41:17.934Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-03T17:41:17.942Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions [none]
+[debug] [2025-04-03T17:41:17.942Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions x-goog-quota-user=projects/project-wamnam
+[debug] [2025-04-03T17:41:17.942Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-03T17:41:18.673Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions 200
+[debug] [2025-04-03T17:41:18.673Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-wamnam:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-03T17:41:18.674Z] Checked if tokens are valid: true, expires at: 1743705676934
+[debug] [2025-04-03T17:41:18.675Z] Checked if tokens are valid: true, expires at: 1743705676934
+[debug] [2025-04-03T17:41:18.675Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam [none]
+[debug] [2025-04-03T17:41:19.009Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam 200
+[debug] [2025-04-03T17:41:19.010Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/project-wamnam {"projectId":"project-wamnam","projectNumber":"1041456749002","displayName":"project wamnam","name":"projects/project-wamnam","resources":{"hostingSite":"project-wamnam"},"state":"ACTIVE","etag":"1_f1c34e4c-4f8d-4107-a1d4-d0989ac4ab9b"}
+[info] 
+[info] === Deploying to 'project-wamnam'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-04-03T17:41:19.013Z] Checked if tokens are valid: true, expires at: 1743705676934
+[debug] [2025-04-03T17:41:19.013Z] Checked if tokens are valid: true, expires at: 1743705676934
+[debug] [2025-04-03T17:41:19.013Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions [none]
+[debug] [2025-04-03T17:41:19.013Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-04-03T17:41:20.124Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/project-wamnam/versions 200

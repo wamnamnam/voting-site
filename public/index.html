@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vote for Your Favorite!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Vote for Your Favorite Contestant</h1>
+
+  <!-- Floating message box -->
+  <div id="vote-message" class="hidden"></div>
+
+  <!-- Top row (3 contestants) -->
+  <div class="vote-row top-row">
+    <div class="vote-box">
+      <img src="images/caitlin.jpg" alt="Caitlin">
+      <p>Caitlin</p>
+      <button onclick="vote('caitlin')">Vote</button>
+    </div>
+    <div class="vote-box">
+      <img src="images/ggia.jpg" alt="Ggia">
+      <p>Ggia</p>
+      <button onclick="vote('ggia')">Vote</button>
+    </div>
+    <div class="vote-box">
+      <img src="images/jae.jpg" alt="Jae">
+      <p>Jae</p>
+      <button onclick="vote('jae')">Vote</button>
+    </div>
+  </div>
+
+  <!-- Bottom row (4 contestants) -->
+  <div class="vote-row bottom-row">
+    <div class="vote-box">
+      <img src="images/matt.jpg" alt="Matt">
+      <p>Matt</p>
+      <button onclick="vote('matt')">Vote</button>
+    </div>
+    <div class="vote-box">
+      <img src="images/max.jpg" alt="Max">
+      <p>Max</p>
+      <button onclick="vote('max')">Vote</button>
+    </div>
+    <div class="vote-box">
+      <img src="images/stefani.jpg" alt="Stefani">
+      <p>Stefani</p>
+      <button onclick="vote('stefani')">Vote</button>
+    </div>
+    <div class="vote-box">
+      <img src="images/zoe.jpg" alt="Zoe">
+      <p>Zoe</p>
+      <button onclick="vote('zoe')">Vote</button>
+    </div>
+  </div>
+
+  <script type="module">
+    import { db } from './firebase-init.js';
+    import { doc, updateDoc, increment } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+
+    const showMessage = (text) => {
+      const box = document.getElementById("vote-message");
+      if (!box) return;
+      box.textContent = text;
+      box.classList.remove("hidden");
+      box.classList.add("visible");
+
+      setTimeout(() => {
+        box.classList.remove("visible");
+        box.classList.add("hidden");
+      }, 3000);
+    };
+
+    const vote = async (contestant) => {
+  if (localStorage.getItem("voted")) {
+    showMessage("Hey, one vote per person 💅");
+    return;
+  }
+
+  const ref = doc(db, "votes", "totals");
+  await updateDoc(ref, { [contestant]: increment(1) });
+
+  localStorage.setItem("voted", contestant);
+
+  const capitalized = contestant.charAt(0).toUpperCase() + contestant.slice(1);
+  showMessage("Thank you for voting for " + capitalized + " 💖");
+};
+
+    window.vote = vote;
+  </script>
+</body>
+</html>
