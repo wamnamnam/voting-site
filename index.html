@@ -55,7 +55,14 @@
 
   <script type="module">
     import { db } from './firebase-init.js';
-    import { doc, updateDoc, increment } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+    import {
+      doc,
+      updateDoc,
+      increment,
+      collection,
+      addDoc,
+      serverTimestamp
+    } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
 
     const showMessage = (text) => {
       const box = document.getElementById("vote-message");
@@ -71,19 +78,27 @@
     };
 
     const vote = async (contestant) => {
-  if (localStorage.getItem("voted")) {
-    showMessage("Hey, one vote per person 💅");
-    return;
-  }
+      if (localStorage.getItem("voted")) {
+        showMessage("Hey, one vote per person 💅");
+        return;
+      }
 
-  const ref = doc(db, "votes", "totals");
-  await updateDoc(ref, { [contestant]: increment(1) });
+      // 1. Update total votes
+      const ref = doc(db, "votes", "totals");
+      await updateDoc(ref, { [contestant]: increment(1) });
 
-  localStorage.setItem("voted", contestant);
+      // 2. Log the vote with timestamp
+      await addDoc(collection(db, "voteLogs"), {
+        contestant,
+        timestamp: serverTimestamp()
+      });
 
-  const capitalized = contestant.charAt(0).toUpperCase() + contestant.slice(1);
-  showMessage("Thank you for voting for " + capitalized + " 💖");
-};
+      // 3. Save that they've voted
+      localStorage.setItem("voted", contestant);
+
+      const capitalized = contestant.charAt(0).toUpperCase() + contestant.slice(1);
+      showMessage("Thank you for voting for " + capitalized + " 💖");
+    };
 
     window.vote = vote;
   </script>
