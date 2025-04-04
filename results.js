@@ -23,8 +23,8 @@ const docRef = doc(db, "votes", "totals");
 onSnapshot(docRef, (docSnap) => {
   if (docSnap.exists()) {
     const data = docSnap.data();
+    console.log("Live data from Firestore:", data); // Add this line for debugging
 
-    // loop through each person and update their span
     Object.keys(data).forEach((name) => {
       const el = document.getElementById(name.toLowerCase());
       if (el) {
