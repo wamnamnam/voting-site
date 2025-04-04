@@ -1,30 +1,37 @@
-import { db } from "./firebase-init.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
 import {
-  collection,
+  getFirestore,
+  doc,
   onSnapshot
 } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
 
-// Match these IDs to your HTML
-const names = ["caitlin", "ggia", "jae", "matt", "max", "stefani", "zoe"];
+const firebaseConfig = {
+  apiKey: "AIzaSyCSrZxP6up_Rsj98bJg9oMYEfmPi7LWHi8",
+  authDomain: "project-wamnam.firebaseapp.com",
+  projectId: "project-wamnam",
+  storageBucket: "project-wamnam.firebasestorage.app",
+  messagingSenderId: "1041456749002",
+  appId: "1:1041456749002:web:fe8c483c7e785a6c9d1733",
+  measurementId: "G-CKRHCFNX0G"
+};
 
-// Set up real-time listener to the votes collection
-onSnapshot(collection(db, "votes"), (snapshot) => {
-  const voteCounts = {};
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
-  // Initialize count for each name
-  names.forEach(name => voteCounts[name] = 0);
+const docRef = doc(db, "votes", "totals");
 
-  // Count each vote in Firestore
-  snapshot.forEach(doc => {
-    const data = doc.data();
-    const vote = data.name?.toLowerCase();
-    if (names.includes(vote)) {
-      voteCounts[vote]++;
-    }
-  });
+onSnapshot(docRef, (docSnap) => {
+  if (docSnap.exists()) {
+    const data = docSnap.data();
 
-  // Update the HTML with the counts
-  names.forEach(name => {
-    document.getElementById(name).textContent = voteCounts[name] || 0;
-  });
+    // loop through each person and update their span
+    Object.keys(data).forEach((name) => {
+      const el = document.getElementById(name.toLowerCase());
+      if (el) {
+        el.textContent = data[name];
+      }
+    });
+  } else {
+    console.log("No such document!");
+  }
 });
